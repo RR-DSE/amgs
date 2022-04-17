@@ -1,0 +1,75 @@
+/*
+- style.css (utf-8)
+- 
+- Edited by: EchoSeven
+- Timestamp: 22-04-17 23:35:55
+- Copyright: Copyright (C) by EchoSeven
+*/
+
+* {
+  font-family: "Verdana", "Helvetica", sans-serif;
+  margin: 0pt 0pt 0pt 0pt;
+  padding: 0pt 0pt 0pt 0pt;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  padding: 0pt 0pt 0pt 0pt;
+}
+
+label {
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 3pt;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 500pt;
+}
+
+select {
+  display: block;
+  width: 100%;
+  max-width: 250pt;
+}
+
+button {
+  width: 80pt;
+  height: 20pt;
+  font-weight: bold;
+}
+
+h1 {
+  display: block;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  background-color: lightskyblue;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 10pt;
+  padding: 1pt 1pt 1pt 1pt;
+}
+
+div.name {
+ margin-bottom: 10pt;
+}
+
+div.lang {
+ margin-bottom: 10pt;
+}
+
+div.section {
+ padding-left: 10pt;
+ padding-right: 10pt;
+}
+
+p.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: darkgreen;
+  margin-bottom: 10pt;
+}
