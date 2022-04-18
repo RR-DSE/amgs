@@ -512,11 +512,15 @@ function onSearch(){
     alert("Attention: indicate at least one name and one language.");
   }
   else {
+    for(let sCurrName of asNames){
+      sLink = getLink(sCurrName, null, null);
+      window.open(sLink, getNewWindowID());
+      sLink = getLink("\"" + sCurrName + "\"", null, null);
+      window.open(sLink, getNewWindowID());
+    }
     for(let uCurrLanguage of auLanguages){
-      for(let sCurrExtra of LANG_DEFINITIONS[uCurrLanguage].extras){
-        for(let sCurrName of asNames){
-          sLink = getLink(sCurrName + " " + sCurrExtra, LANG_DEFINITIONS[uCurrLanguage].lr_param, LANG_DEFINITIONS[uCurrLanguage].cr_param);
-          window.open(sLink, getNewWindowID());
+      for(let sCurrName of asNames){
+        for(let sCurrExtra of LANG_DEFINITIONS[uCurrLanguage].extras){
           sLink = getLink("\"" + sCurrName + "\"" + " " + sCurrExtra, LANG_DEFINITIONS[uCurrLanguage].lr_param, LANG_DEFINITIONS[uCurrLanguage].cr_param);
           window.open(sLink, getNewWindowID());
         }
